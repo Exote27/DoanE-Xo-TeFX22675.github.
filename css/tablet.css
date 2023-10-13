@@ -1,0 +1,180 @@
+@media (min-width: 768px) and (max-width: 991px) {
+  /*style cho nav bao gồm thất cả phần trong navbar (flex-item*/
+  .navbar--container {
+    display: flex;
+    justify-content: center;
+  }
+  /* style cho các phần ở trong navbar */
+  .navbar--item {
+    border-left: solid 1px rgb(211, 211, 211);
+    border-right: solid 1px rgb(211, 211, 211);
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-transform: uppercase;
+    padding-top: 15px;
+    width: 200px;
+  }
+  /* nâng cao - avatar của navbar */
+  .img-avatar {
+    display: none;
+  }
+  .img-item {
+    width: 15px;
+  }
+
+  /*3. Muc tiêu nghề nghiệp & Thông tin cá nhân */
+
+  .custom-part-col {
+    display: flex !important;
+    flex-direction: row;
+    width: 100%;
+    background-color: rgb(240, 238, 238);
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+  }
+
+  #target {
+    padding: 5px;
+    width: 50%;
+    padding-left: 30px;
+  }
+
+  #personal-info {
+    background-color: rgb(229, 229, 229);
+    padding: 5px;
+    width: 50%;
+    padding-left: 30px;
+  }
+
+  #personal-info ul li {
+    padding-left: -40px;
+  }
+
+  #icon_3 {
+    color: rgb(90, 190, 244);
+    margin-top: 20px;
+  }
+  /* 4. Xây dựng phần Thông tin nghề nghiệp */
+  /* style cho container của phần Thông tin nghề nghiệp */
+
+  .container_job-info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 15px;
+    row-gap: 15px;
+    margin: 20px;
+  }
+
+  /*các phần trong phần Thông tin nghề nghiệp */
+  .item_job-info {
+    border: 1px solid black;
+  }
+  /* container-item ở trong .item_job-info ____ containe tất cả phần tử của  .item_job-info */
+  .container-item {
+    border: 10px;
+    align-items: center;
+    margin-left: 15px;
+  }
+  .h1-icon {
+    margin-bottom: 25px;
+    margin-top: 50px;
+  }
+  .h1-icon i {
+    width: 25%;
+  }
+  /* style cho ul của container-item _ để bố cục chia thành 3 phần */
+  ul {
+    grid-column: 1 / 3;
+    list-style: none;
+  }
+  ul li.list_item-thongtinnghenghiep::before {
+    content: "\2022";
+    color: #40b9f2;
+    font-weight: normal;
+    display: inline-block;
+    width: 1em;
+  }
+
+  /*7. Xây dựng phần Chứng chỉ - Giải thưởng*/
+
+  /*container bao gồm các phần trong chứng chỉ (ko bao gồm h1*/
+  .container_certificate {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /*style cho các phần chứng chỉ */
+  .certificate-item {
+    display: block;
+    margin: 15px;
+  }
+
+  .certificate-image {
+    width: 300px;
+    margin-right: 15px;
+  }
+
+  .certificate-item ul {
+    margin-left: -40px;
+    margin-top: 10px;
+  }
+  /*style cho laptrinhweb - để tạo line phía bên phải */
+  #laptrinhweb {
+    border-right: 2px solid #715933;
+    padding: 15px;
+  }
+
+  /* style cho Database - để tạo line ở trên */
+  #Database {
+    grid-column: 1/3;
+    border-top: 2px solid #715933;
+    padding: 35px;
+  }
+
+  #Database h4 {
+    width: 40%;
+  }
+  /*8. Xây dựng phần Dự án*/
+
+  /*style cho div: container-projcet-item _ bao gồm các project*/
+  #container-project {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 15px;
+  }
+  /* style cho các project */
+  .project-item {
+    margin: 10px;
+  }
+  /*style cho hình ảnh của project*/
+  .image-project {
+    width: 100%;
+  }
+
+  /*các phần trong 1 project*/
+  .item_projectitem {
+    padding: 5px;
+    border: 1px solid #000;
+  }
+
+  /*phần thứ 4 của 1 project */
+  .itempart4 {
+    display: grid;
+    grid-template-columns: 30% 70%;
+  }
+
+  /*9. Xây dựng phần Liên hệ*/
+  #container-footer {
+    background-color: #e0e0e0;
+    width: 100%;
+  }
+
+  #container-footer ul {
+    display: flex;
+    padding: 50px;
+    justify-content: center;
+  }
+}
